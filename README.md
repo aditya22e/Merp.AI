@@ -14,8 +14,8 @@ src/
 │   │   │   └── [id]/
 │   │   ├── notes/
 │   │   │   ├── create/
-│   │   │   ├── [id]/
-│   │   │   └── [id]/questions/
+│   │   │   └── [id]/
+│   │   │       └── questions/
 │   │   ├── assessments/
 │   │   │   └── [quizId]/
 │   │   ├── chat/
