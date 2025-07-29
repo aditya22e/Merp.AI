@@ -5,26 +5,40 @@ src/
 │   │   ├── auth/
 │   │   │   ├── jwt/
 │   │   │   │   ├── login/
+│   │   │   │   │   └── route.ts
 │   │   │   │   └── register/
-│   │   │   ├── oauth/
-│   │   │   │   ├── login/
-│   │   │   │   └── callback/
+│   │   │   │       └── route.ts
+│   │   │   ├── [...nextauth]/
+│   │   │   │   └── route.ts
 │   │   ├── roadmap/
 │   │   │   ├── generate/
+│   │   │   │   └── route.ts
 │   │   │   └── [id]/
+│   │   │       └── route.ts
 │   │   ├── notes/
 │   │   │   ├── create/
-│   │   │   └── [id]/
-│   │   │       └── questions/
+│   │   │   │   └── route.ts
+│   │   │   ├── [id]/
+│   │   │   │   ├── route.ts
+│   │   │   │   └── questions/
+│   │   │   │       └── route.ts
 │   │   ├── assessments/
+│   │   │   ├── create/
+│   │   │   │   └── route.ts
 │   │   │   └── [quizId]/
+│   │   │       └── route.ts
 │   │   ├── chat/
 │   │   │   ├── doubt/
+│   │   │   │   └── route.ts
 │   │   │   ├── mentor/
+│   │   │   │   └── route.ts
 │   │   │   └── history/
-│   │   └── dashboard/
-│   │       ├── learner/
-│   │       └── analytics/
+│   │   │       └── route.ts
+│   │   ├── dashboard/
+│   │   │   ├── learner/
+│   │   │   │   └── route.ts
+│   │   │   └── analytics/
+│   │   │       └── route.ts
 │   ├── auth/
 │   │   ├── login/
 │   │   │   └── page.tsx
@@ -59,6 +73,8 @@ src/
 │   │   ├── OnboardingForm.tsx
 │   │   ├── RoadmapCard.tsx
 │   │   ├── NotesList.tsx
+│   │   ├── NoteEditor.tsx
+│   │   ├── QuestionPrompt.tsx
 │   │   ├── QuizComponent.tsx
 │   │   ├── ChatWindow.tsx
 │   │   └── AnalyticsChart.tsx
@@ -66,9 +82,14 @@ src/
 │   │   ├── Navbar.tsx
 │   │   ├── Footer.tsx
 │   │   └── Button.tsx
+│   ├── home/
+│   │   ├── HeroSection.tsx
+│   │   ├── FeatureCard.tsx
+│   │   └── CallToAction.tsx
 │   └── ui/
 │       ├── Card.tsx
-│       └── Input.tsx
+│       ├── Input.tsx
+│       └── Modal.tsx
 ├── lib/
 │   ├── auth/
 │   │   ├── jwt.ts
@@ -85,10 +106,10 @@ src/
 │   │   ├── config.ts
 │   │   ├── auth.ts
 │   │   └── firestore.ts
-│   └── utils/
-│       ├── api.ts
-│       ├── formatters.ts
-│       └── validators.ts
+│   ├── utils/
+│   │   ├── api.ts
+│   │   ├── formatters.ts
+│   │   └── validators.ts
 ├── types/
 │   ├── auth.ts
 │   ├── roadmap.ts
@@ -96,18 +117,22 @@ src/
 │   ├── assessments.ts
 │   ├── chat.ts
 │   ├── dashboard.ts
-│   └── user.ts
+│   ├── user.ts
+│   └── home.ts
 ├── hooks/
 │   ├── useAuth.ts
 │   ├── useRoadmap.ts
 │   ├── useNotes.ts
 │   ├── useAssessments.ts
 │   ├── useChat.ts
-│   └── useAnalytics.ts
+│   ├── useAnalytics.ts
+│   └── useHome.ts
 ├── styles/
 │   ├── dashboard.css
 │   ├── notes.css
-│   └── chat.css
+│   ├── assessments.css
+│   ├── chat.css
+│   └── home.css
 ├── middleware.ts
 └── constants.ts
 ```
